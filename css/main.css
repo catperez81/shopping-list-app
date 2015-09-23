@@ -76,7 +76,7 @@ ul {
 .delete {
   float: right;
   margin-top: 3px;
-  display: none;
+/*  display: none;*/
 }
 
 .container {

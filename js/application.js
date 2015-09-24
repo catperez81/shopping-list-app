@@ -18,11 +18,17 @@ $(document).ready(function() {
 // remove item from the list
 	$('.delete').click(function(){
 	$(this).closest('li').remove();	
+
 	});
 
 // remove all items from the list
 	$('button').click(function(){
 	$('li').remove();	
+	});
+
+	// strike through on item when checked
+	$('checkbox').click(function(){
+  		$('label').wrap("<strike>");
 	});
 
 });

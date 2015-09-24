@@ -102,7 +102,6 @@ ul {
 }
 
 
-
 .item {
   margin-top: 1em;
   padding-left:1em;
@@ -120,7 +119,10 @@ label {
   margin-left:1em;
 }
 
-
+/*input [type=checkbox]{
+  font-size:5em;
+}
+*/
 
 button {
   -webkit-border-radius: 5;

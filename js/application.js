@@ -6,7 +6,7 @@
 
 
 $(document).ready(function() {
-// 	input item into field then show in list while clearing the field
+// 	input item press enter, show in list and clear in field
 	$('#item').keypress(function(event){
 		var keycode = (event.keyCode ? event.keyCode : event.which);
 		if(keycode == '13'){
@@ -15,9 +15,14 @@ $(document).ready(function() {
 			$('#item').val('');
 		}
 	}); 
-
+// remove item from the list
 	$('.delete').click(function(){
 	$(this).closest('li').remove();	
+	});
+
+// remove all items from the list
+	$('button').click(function(){
+	$('li').remove();	
 	});
 
 });

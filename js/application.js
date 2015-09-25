@@ -26,9 +26,14 @@ $(document).ready(function() {
 	$('li').remove();	
 	});
 
-	// strike through on item when checked
-	$('checkbox').click(function(){
-  		$('.val').css("text-decoration", "line-through"); 
+// strike through on item when checked
+	$('[type="checkbox"]').click(function(){
+	    var element = $(this).parent();
+	    if ($(this).is(':checked')) {
+	       element.wrap('<del>');
+	    } else {
+	       element.unwrap('<del>');
+	    }
 	});
 
 });

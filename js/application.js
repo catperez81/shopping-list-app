@@ -15,14 +15,10 @@ $(document).ready(function() {
 			$('#item').val('');
 		}
 	}); 
-// remove item from the list
-	// $('.delete').click(function(){
-	// $(this).closest('li').remove();
-	// });
 
 // remove item from the list
-	$('ul').on('click', 'li', function() {
-    $(this).remove();
+  	$('ul').on('click', '.delete', function() {
+        $(this).closest('li').remove();
     });
 
 // remove all items from the list

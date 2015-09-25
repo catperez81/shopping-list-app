@@ -27,7 +27,7 @@ $(document).ready(function() {
 	});
 
 // strike through on item when checked
-	$('[type="checkbox"]').click(function(){
+	$(document).on('click', '[type="checkbox"]', function () {
 	    var element = $(this).parent();
 	    if ($(this).is(':checked')) {
 	       element.wrap('<del>');

@@ -16,10 +16,14 @@ $(document).ready(function() {
 		}
 	}); 
 // remove item from the list
-	$('.delete').click(function(){
-	$(this).closest('li').remove();	
+	// $('.delete').click(function(){
+	// $(this).closest('li').remove();
+	// });
 
-	});
+// remove item from the list
+	$('ul').on('click', 'li', function() {
+    $(this).remove();
+    });
 
 // remove all items from the list
 	$('button').click(function(){
@@ -28,7 +32,7 @@ $(document).ready(function() {
 
 	// strike through on item when checked
 	$('checkbox').click(function(){
-  		$('label').wrap("<strike>");
+  		$('.val').css("text-decoration", "line-through"); 
 	});
 
 });

@@ -51,6 +51,10 @@ ul {
   display:block;
 }
 
+del {
+  text-decoration: line-through; color:#00aeff;
+}
+
 .shopping {
   text-align:center;
   font-family:'Cabin', serif;
